@@ -1,0 +1,24 @@
+:imagesdir: img
+
+== ZhongWin
+
+[.text-justify]
+ZhongWin is a Chinese dictionary overlay for Windows programs.
+
+Currently only programs using DX9 and DX11 may load the shared library,
+but support for other rendering backends should easily be added thanks to ImGui.
+
+.ZhongWin loaded in GuJian with its default selection box
+image::gujian1.png[gujian1, 512]
+
+.ZhongWin's selection box modified by and external shared library
+image::gujian2.png[gujian2, 512]
+
+[.text-justify]
+*TODO* list:
+[horizontal]
+Plugins:: add an extensible plugin system and rework the core architecture
+Dictionaries:: allow the user to dinamically load dictionaries
+HTML:: add support for HTML rendering
+Hooks:: add support for other platform and rendering hooks
+CMake:: use CMake to build the application
